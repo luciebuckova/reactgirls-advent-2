@@ -96,7 +96,7 @@ body {
 .header__logo {
   font-family: 'Cinzel', serif;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .header__link {
@@ -110,7 +110,7 @@ body {
 
 .main__heading {
   color: #fefefe;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -164,8 +164,8 @@ body {
 
 .movie-overview {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 .movie-overview__image img {
@@ -209,6 +209,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .overview {
@@ -222,6 +223,16 @@ body {
 @media screen and (min-width: 640px) {
   .main__content {
     grid-template-columns: 1fr 1fr;
+  }
+  .header__logo {
+    font-size: 3rem;
+  }
+  .main__heading {
+    font-size: 2rem;
+  }
+  .movie-overview {
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
   }
 }
 
