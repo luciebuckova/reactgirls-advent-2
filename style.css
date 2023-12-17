@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #350948;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  padding: 1rem 3rem;
+  color: #29adb2;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #ff3fa4;
+}
+
+.search {
+  background-color: #350948;
+  border: 2px solid #29adb2;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #29adb2;
+}
+
+.search::placeholder {
+  color: #29adb2;
+}
+
+.search:focus {
+  outline: none;
+  background-color: #29adb2;
+  color: #350948;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.movie {
+  position: relative;
+  border-radius: 3px;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.one-movie {
+  display: block;
+  padding: 3rem;
+  width: 100%;
+  background-color: #532e62cd;
+  color: #29adb2;
+  border-radius: 6px;
+}
+
+.movie-info {
+  display: flex;
+  gap: 3rem;
+}
+
+.movie-info img {
+  max-width: 100%;
+}
